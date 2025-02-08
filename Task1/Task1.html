@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshil Padhiyar_Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Optional custom styles can be added here */
+      .project-image {
+        transition: transform 0.3s ease; /* Smooth transition for hover effect */
+      }
+
+      .project-image:hover {
+        transform: scale(1.05); /* Slightly enlarge image on hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
+      }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white font-bold text-xl">Harshil Padhiyar</a>
+            <div>
+                <a href="#about" class="text-gray-300 hover:text-white mr-4">About</a>
+                <a href="#projects" class="text-gray-300 hover:text-white mr-4">Projects</a>
+                <a href="#contact" class="text-gray-300 hover:text-white">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-blue-500 py-20 text-white text-center">
+            <h1 class="text-5xl font-bold mb-4">Hello, I'm Harshil Padhiyar</h1>
+            <p class="text-2xl mb-8">A JAVA DEVELOPER</p>
+            <a href="#projects" class="bg-white text-blue-500 py-3 px-6 rounded-lg font-bold hover:bg-blue-100 transition duration-300">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-12 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-6 text-center">About Me</h2>
+            <div class="max-w-3xl mx-auto text-center">  <p class="text-lg text-gray-800">
+                I am from Ahmedabad. I am studying for a B.tech in information technology in sem 6 at Aditya Silver Oak Institute of Technology. 
+                I am an extremely enthusiastic person about learning new technologies. I also want to secure a challenging position as a Java Software Developer where I can leverage my technical skills and passion for programming to contribute significantly to innovative projects and professional growth. I believe, that this field requires regular updates with new technologies and new things which is more important. that's why I am interested in learning new things. 
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects" class="py-12 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-6 text-center">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+                    <img src="image.png" alt="Project 1" class="project-image w-full h-48 object-cover">  <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Library Management System</h3>
+                        <p class="text-gray-700">Stores information about books.
+                            Allows users to add, remove, search for books.
+                            Implement user accounts, borrowing/returning functionality.</p>
+                        <a href="#" class="text-blue-500 hover:underline mt-4 inline-block">View Project</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+                   <img src="eCommerce-website.jpg" alt="Project 2" class="project-image w-full h-48 object-cover"> <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">E-commerce Application</h3>
+                        <p class="text-gray-700">Simulates a basic e-commerce platform.
+                            Includes product catalog, shopping cart, checkout process.
+                            User accounts, payment gateway integration.</p>
+                        <a href="#" class="text-blue-500 hover:underline mt-4 inline-block">View Project</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+                    <img src="shutterstock_2232272531.webp" alt="Project 3" class="project-image w-full h-48 object-cover"> <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Inventory Management System</h3>
+                        <p class="text-gray-700">Manages inventory for a small business.
+                            Tracks items, quantities, prices, etc.
+                            Generates reports.
+                            Integration with sales system, supplier management.
+                            </p>
+                        <a href="#" class="text-blue-500 hover:underline mt-4 inline-block">View Project</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-12 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-6 text-center">Contact Me</h2>
+            <div class="max-w-md mx-auto">
+                <form>
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4" class="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="bg-blue-500 text-white py-3 px-6 rounded-lg font-bold hover:bg-blue-700 transition duration-300">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 py-4 text-center text-gray-300">
+        <p>&copy; 2025 Harshil Padhiyar</p>
+    </footer>
+
+</body>
+</html>
